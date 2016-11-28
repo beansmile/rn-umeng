@@ -34,6 +34,12 @@ RCT_EXPORT_METHOD(startWithAppkey:(NSString *)appkey)
     [MobClick startWithAppkey:appkey];
 }
 
+// init with appkey and channelId 
+RCT_EXPORT_METHOD(startWithAppkeyAndChannel:(NSString *)appkey channelId:(NSString *)cid)
+{
+    [MobClick startWithAppkey:appkey reportPolicy:BATCH channelId:cid];
+}
+
 RCT_EXPORT_METHOD(setAppVersion:(NSString*)version)
 {
     [MobClick setAppVersion:version];

@@ -11,7 +11,7 @@ export default class MobclickAgent{
         umengClient.startWithAppkey(value);
     }
 
-    //android
+    //android&ios
     static startWithAppkeyAndChannel(value,channel){
         umengClient.startWithAppkeyAndChannel(value,channel);
     }
